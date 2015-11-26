@@ -89,6 +89,7 @@ public class CsBridge : MonoBehaviour {
 			childBridge.transform.parent = newBridge.transform;
 
 			if(canCoin){
+
 				childBridge = Instantiate(coin,pos,quatAng) as GameObject;
 				childBridge.transform.parent = newBridge.transform;
 			}

@@ -34,8 +34,8 @@ public class UIctrl : MonoBehaviour {
 		temp.x = ENDmovedPos;
 		_endScene.transform.localPosition = temp;
 
-		GameObject a = (GameObject)Resources.Load("Pangpang");
-		player= (GameObject)Instantiate(a,new Vector3(0,0,0),Quaternion.identity);
+		GameObject a = (GameObject)Resources.Load("Horse_Prefab");
+		player= (GameObject)Instantiate(a,new Vector3(0,1,0),Quaternion.identity);
 	}
 
 	public void openEndScene(){
