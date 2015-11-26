@@ -148,6 +148,8 @@ public class HorseCtrl : MonoBehaviour {
 			canRight = true;
 			placed = "middle";
 
+			Debug.Log(""+placed);
+
 		}else if(moved == "right" && placed =="middle"){
 
 			canRight = false;
@@ -160,7 +162,9 @@ public class HorseCtrl : MonoBehaviour {
 			
 			canRight = true;
 			canLeft = true;
-			placed = "right";
+			placed = "middle";
+
+			Debug.Log(""+placed);
 			
 		}
 

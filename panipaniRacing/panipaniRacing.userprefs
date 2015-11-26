@@ -1,13 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/04.Script/player/HorseCtrl.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/04.Script/CsFollowCam.cs">
     <Files>
-      <File FileName="Assets/04.Script/player/HorseCtrl.cs" Line="213" Column="1" />
-      <File FileName="Assets/04.Script/GameCtrl.cs" Line="1" Column="1" />
-      <File FileName="Assets/04.Script/GameState.cs" Line="1" Column="1" />
-      <File FileName="Assets/04.Script/LookAtCamera.cs" Line="1" Column="1" />
-      <File FileName="Assets/04.Script/UIctrl.cs" Line="1" Column="1" />
-      <File FileName="Assets/04.Script/CsBridge.cs" Line="1" Column="1" />
+      <File FileName="Assets/04.Script/player/HorseCtrl.cs" Line="319" Column="15" />
+      <File FileName="Assets/04.Script/CsFollowCam.cs" Line="25" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
