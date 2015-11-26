@@ -8,11 +8,13 @@ public class CsBridge : MonoBehaviour {
 	public GameObject apple;
 	public GameObject banana;
 
-	public GameObject bridgeTurn;
+	public GameObject bridgeinteresting;
 	public GameObject bridgeGoal;
 
+	public HorseCtrl horsectrl;
+	public float horse_score ;
 
-	GameObject newBridge;
+	public GameObject newBridge;
 	GameObject childBridge;
 	public GameObject oldBridge;
 
@@ -33,36 +35,53 @@ public class CsBridge : MonoBehaviour {
 		childBridge = newBridge;
 
 		MakeBridge ("FORWARD");	
+
+
+		/*
+horsectrl = GameObject.Find ("Horse_Prefab").GetComponent<HorseCtrl>();
+		horse_score = horsectrl.score;
+
+		Debug.Log("score: "+horse_score);
+		 */
+
 	}
 
 	void MakeBridge(string sDir){
+
 		countBridge++;
 		DeleteBridge ();
 		CalcRotation (sDir);
 		MakeNewBridge ();
-	}
+
+
+
+	}//end
 
 	void DeleteBridge(){
+
 		Destroy (oldBridge);
+
 		oldBridge = newBridge;
+
 
 		newBridge = new GameObject ("StartBridge");
 	}
 
 	void CalcRotation(string sDir){
 		switch (sDir) {
+		
 			case "LEFT" : dir--;break;
 			case "RIGHT" : dir++;break;
 		}
 
 		if (dir < 0) dir = 3;
 		if (dir > 3) dir = 0;
-		quatAng.eulerAngles = new Vector3 (0, dir * 90, 0);
+		quatAng.eulerAngles = new Vector3 (0, 0, 0);
 	}
 
 	void MakeNewBridge(){
 
-		for (int i=0; i<10; i++) {
+		for (int i=0; i<19; i++) {
 			bridge = bridges[0];
 			coin = coins[Random.Range(0,3)];
 			canCoin = false;
@@ -83,6 +102,7 @@ public class CsBridge : MonoBehaviour {
 			case 3:
 				pos = new Vector3(localPos.x-10,0,localPos.z);
 				break;
+
 			}
 
 			childBridge = Instantiate(bridge,pos,quatAng) as GameObject;
@@ -108,20 +128,36 @@ public class CsBridge : MonoBehaviour {
 
 	void SelectBridge(int n){
 		switch (n) {
-			case 9:
-				if(countBridge<2)
-					bridge = bridgeTurn;
-				else
-					bridge = bridgeGoal;
-				break;
-			case 1:
+		case 9:
+			if(countBridge<5){
+				
+				bridge = bridgeinteresting;
+
+				Debug.Log("final");
+			
+			}else{
+				
+				bridge = bridgeGoal;
+
+				//MakeBridge ("FORWARD");	
+			}//end
+			
+			break;
+			case 17:
+			    bridge = bridgeGoal;
+			Debug.Log("hi");
+			break;
 			case 3:
-			case 5:
-			case 7:
-				bridge = bridges[Random.Range(0,bridges.Length)];
+			break;
+		case 5:
+			break;
+		case 7:
+
+			bridge = bridges[Random.Range(0,bridges.Length)];
 				break;
 			default:
 				if(Random.Range(0,100)>50){
+
 					canCoin = true;
 				}
 				break;

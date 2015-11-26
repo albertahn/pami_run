@@ -13,22 +13,27 @@ public class CsFollowCam : MonoBehaviour {
 		target = a;
 	}
 
+	
 	void Start(){
-		dist = 12.0f;
+		dist = 10.0f;
 		height = 5.0f;
-		dampRotate = 5.0f;
-
+		dampRotate = 15.0f;
+		
 		tr = transform;
 	}
-
+	
 	void LateUpdate(){
 		float currYAngle = Mathf.LerpAngle (tr.eulerAngles.y
 		                                    ,target.eulerAngles.y
 		                                    ,dampRotate*Time.deltaTime);
 		Quaternion rot = Quaternion.Euler (0, currYAngle, 0);
-
+		
 		tr.position = target.position - (rot * Vector3.forward * dist) + (Vector3.up * height);
-
-		tr.LookAt (target);
+		
+		
+		Vector3 pointer= target.position;
+		pointer.y = 4.0f;
+		
+		tr.LookAt (pointer);
 	}
 }

@@ -19,7 +19,7 @@ public class HorseCtrl : MonoBehaviour {
 	string placed = "middle";
 	
 	float dirX = 0;
-	float score = 0;
+	 public float score = 0;
 	
 	Vector3 touchStart;
 	
@@ -141,14 +141,14 @@ public class HorseCtrl : MonoBehaviour {
 			canRight = true;
 			placed = "left";
 
-			Debug.Log(""+placed);
+			//Debug.Log(""+placed);
 
 		}else if(moved =="left" && placed =="right"){
 			canLeft = true;
 			canRight = true;
 			placed = "middle";
 
-			Debug.Log(""+placed);
+			//Debug.Log(""+placed);
 
 		}else if(moved == "right" && placed =="middle"){
 
@@ -156,7 +156,7 @@ public class HorseCtrl : MonoBehaviour {
 			canLeft = true;
 			placed = "right";
 
-			Debug.Log(""+placed);
+			//Debug.Log(""+placed);
 
 		}else if(moved =="right" && placed =="left"){
 			
@@ -164,7 +164,7 @@ public class HorseCtrl : MonoBehaviour {
 			canLeft = true;
 			placed = "middle";
 
-			Debug.Log(""+placed);
+			//Debug.Log(""+placed);
 			
 		}
 
