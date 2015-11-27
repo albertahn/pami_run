@@ -1,0 +1,12 @@
+{
+	"publisher_id": 0,
+	"publisher_package_id": 3267,
+	"title": "Animated Goblin Warrior",
+	"description": "This character has 30 animations.\nModel with armor, 2 shields and 2 maces - 3,010 polygons, 5,402 triangles and 2,900 vertexes\nTextures: diffuse, specular, and normals maps. \nTextures are TIF file format 2048x2048 - body and 1024x1024 - for all armor parts together, 1024x1024for shield, 512X512 for mace. \n12 textures at all.\na href=\"http://www.youtube.com/user/MycroSlonik#p/a/u/0/QdsWluJGJtc\">See it on video!</a>\n\n",
+	"changes": "Initial release.",
+	"version_name": "1.0",
+	"category": 0,
+	"price": "35",
+	"recommended_features": [],
+	"required_features": []
+}

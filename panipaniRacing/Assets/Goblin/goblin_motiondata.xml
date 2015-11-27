@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Anim>
+ <Data id="1" name="G_war_standing" startFrame="0f" endFrame="59f" />
+ <Data id="2" name="G_war_weapon_out_01" startFrame="60f" endFrame="100f" />
+ <Data id="3" name="G_war_combat_mode" startFrame="101f" endFrame="151f" />
+ <Data id="4" name="G_war_anger" startFrame="152f" endFrame="202f" />
+ <Data id="5" name="G_war_backwards" startFrame="203f" endFrame="238f" />
+ <Data id="6" name="G_war_below_high_swing" startFrame="239f" endFrame="274f" />
+ <Data id="7" name="G_war_sheld_blow" startFrame="275f" endFrame="310f" />
+ <Data id="8" name="G_war_shield_block" startFrame="311f" endFrame="346f" />
+ <Data id="9" name="G_war_dodge_to_left" startFrame="347f" endFrame="382f" />
+ <Data id="10" name="G_war_dodge_to_right" startFrame="383f" endFrame="418f" />
+ <Data id="11" name="G_war_Hit_from_front" startFrame="419f" endFrame="454f" />
+ <Data id="12" name="G_war_moving_left" startFrame="455f" endFrame="475f" />
+ <Data id="13" name="G_war_moving_right" startFrame="476f" endFrame="496f" />
+ <Data id="14" name="G_war_parry_from_stright_down" startFrame="497f" endFrame="532f" />
+ <Data id="15" name="G_war_parry_left" startFrame="533f" endFrame="568f" />
+ <Data id="16" name="G_war_parry_right" startFrame="569f" endFrame="604f" />
+ <Data id="17" name="G_war_swing_left" startFrame="605f" endFrame="640f" />
+ <Data id="18" name="G_war_swing_right" startFrame="641f" endFrame="676f" />
+ <Data id="19" name="G_war_swing_straight_down" startFrame="677f" endFrame="712f" />
+ <Data id="20" name="G_war_jump_blow" startFrame="713f" endFrame="754f" />
+ <Data id="21" name="G_war_weapon_back_01" startFrame="755f" endFrame="795f" />
+ <Data id="22" name="G_war_looking_around" startFrame="796f" endFrame="917f" />
+ <Data id="23" name="G_war_talking" startFrame="918f" endFrame="963f" />
+ <Data id="24" name="G_war_tracking" startFrame="964f" endFrame="1139f" />
+ <Data id="25" name="G_war_Stretching" startFrame="1140f" endFrame="1240f" />
+ <Data id="26" name="G_war_Digging" startFrame="1245f" endFrame="1280f" />
+ <Data id="27" name="G_war_run" startFrame="1285f" endFrame="1307f" />
+ <Data id="28" name="G_war_Jump_runing" startFrame="1312f" endFrame="1352f" />
+ <Data id="29" name="G_war_walk" startFrame="1357f" endFrame="1392f" />
+ <Data id="30" name="G_war_daying" startFrame="1397f" endFrame="1462f" />
+</Anim>

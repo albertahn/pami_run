@@ -35,4 +35,11 @@ public class GameCtrl : MonoBehaviour {
 
 		}//end
 	}
+
+	public void restartGame(){
+
+		Application.LoadLevel(Application.loadedLevel);
+
+
+	}//re
 }

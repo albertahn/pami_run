@@ -5,9 +5,9 @@ public class HorseCtrl : MonoBehaviour {
 	public GUISkin skin;
 	GameObject manager;
 	
-	int speedForward = 12;
-	int speedSide = 6;
-	int jumpPower = 250;
+	int speedForward = 32;
+	int speedSide = 10;
+	int jumpPower = 200;
 	
 	bool canJump = true;
 	bool canTurn = false;
@@ -101,12 +101,20 @@ public class HorseCtrl : MonoBehaviour {
 	
 	void CheckMobile(){
 		float x = Input.acceleration.x;
+
 		
-		if (x < -0.2f && canLeft && isGround)
-			dirX = -0.6f;
-		if (x > 0.2f && canRight && isGround)
-			dirX = 0.6f;
+		if (x < -0.2f && canLeft && isGround){
+			dirX = -0.8f;
 		
+		}
+		if (x > 0.2f && canRight && isGround){
+			dirX = 0.8f;
+		}
+
+
+
+
+
 		foreach (Touch tmp in Input.touches) {
 			if(tmp.phase == TouchPhase.Began){
 				touchStart = tmp.position;
@@ -121,11 +129,11 @@ public class HorseCtrl : MonoBehaviour {
 				}
 				
 				if(isGround && touchEnd.x - touchStart.x<-100){
-					RotateHuman("LEFT");
+					//RotateHuman("LEFT");
 				}
 				
 				if(isGround && touchEnd.x - touchStart.x>100){
-					RotateHuman("RIGHT");
+					//RotateHuman("RIGHT");
 				}
 			}
 			

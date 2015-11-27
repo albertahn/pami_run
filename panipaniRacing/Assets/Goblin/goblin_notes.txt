@@ -1,0 +1,52 @@
+Animated Goblin Warrior
+
+I used Character Studio 3D MAX to make animations.
+This character has 30 animations. 
+
+Here you can find  animations preview: http://www.youtube.com/user/MycroSlonik#p/a/u/0/QdsWluJGJtc
+
+Animation list:
+
+1) G_war_standing: 0 - 59 fr.,
+ 2) G_war_weapon_out_01: 60 - 100 fr.,
+ 3) G_war_combat_mode: 101 - 151 fr.,
+ 4) G_war_anger: 152 - 202 fr.,
+ 5) G_war_backwards: 203 - 238 fr.,
+ 6) G_war_below_high_swing: 239 - 274 fr.,
+ 7) G_war_sheld_blow: 275 - 310 fr.,
+ 8) G_war_shield_block: 311 - 346 fr.,
+ 9) G_war_dodge_to_left: 347 - 382 fr.,
+ 10) G_war_dodge_to_right: 383 - 418 fr.,
+ 11) G_war_Hit_from_front: 419 - 454 fr.,
+ 12) G_war_moving_left: 455 - 475 fr.,
+ 13) G_war_moving_right: 476 - 496 fr.,
+ 14) G_war_parry_from_stright_down: 497 - 532 fr.,
+ 15) G_war_parry_left: 533 - 568 fr.,
+ 16) G_war_parry_right: 569 - 604 fr.,
+ 17) G_war_swing_left: 605 - 640 fr.,
+ 18) G_war_swing_right: 641 - 676 fr.,
+ 19) G_war_swing_straight_down: 677 - 712 fr.,
+ 20) G_war_jump_blow: 713 - 754 fr.,
+ 21) G_war_weapon_back_01: 755 - 795 fr.,
+ 22) G_war_looking_around: 796 - 917 fr.,
+ 23) G_war_talking: 918 - 963 fr.,
+ 24) G_war_tracking: 964 - 1139 fr.,
+ 25) G_war_Stretching: 1140 - 1240 fr.,
+ 26) G_war_Digging: 1245 - 1280 fr.,
+ 27) G_war_run: 1285 - 1307 fr.,
+ 28) G_war_Jump_runing: 1312 - 1352 fr.,
+ 29) G_war_walk: 1357 - 1392 fr.,
+ 30) G_war_daying: 1397 - 1462 fr.,
+
+
+Goblin model only  has 2,190 polygons, 4,044 triangles and 2,080 vertexes. With armor, 2 shields and 2 maces - 3,010 polygons, 5,402 triangles and 2,900 vertexes
+
+Textures: diffuse, specular, and normals maps. 
+Textures are TIF file format 2048x2048 - body and 1024x1024 - for all armor parts together, 1024x1024for shield, 512X512 for mace. 
+12 textures at all.
+
+If you have questions, please mail me: mr.necturus@gmail.com
+
+
+character, fantasy, guard, warrior, goblin, man, armor, polygonal, video game, wow, rpg, mmo, soldier, military, fps, army, bow, medieval, monster 
+

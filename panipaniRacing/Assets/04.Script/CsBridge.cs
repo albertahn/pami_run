@@ -81,7 +81,7 @@ horsectrl = GameObject.Find ("Horse_Prefab").GetComponent<HorseCtrl>();
 
 	void MakeNewBridge(){
 
-		for (int i=0; i<19; i++) {
+		for (int i=0; i<119; i++) {
 			bridge = bridges[0];
 			coin = coins[Random.Range(0,3)];
 			canCoin = false;

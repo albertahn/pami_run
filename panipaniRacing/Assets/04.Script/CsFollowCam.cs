@@ -34,6 +34,6 @@ public class CsFollowCam : MonoBehaviour {
 		Vector3 pointer= target.position;
 		pointer.y = 4.0f;
 		
-		tr.LookAt (pointer);
+		//tr.LookAt (pointer);
 	}
 }

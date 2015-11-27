@@ -7,6 +7,8 @@ Project("{FA77F8FF-F939-3F87-5745-FA66D2F73E05}") = "panipaniRacing", "Assembly-
 EndProject
 Project("{FA77F8FF-F939-3F87-5745-FA66D2F73E05}") = "panipaniRacing", "Assembly-UnityScript-firstpass.unityproj", "{A92AD51A-94AD-F2A7-DFFB-B116BDF6F62D}"
 EndProject
+Project("{FA77F8FF-F939-3F87-5745-FA66D2F73E05}") = "panipaniRacing", "Assembly-UnityScript.unityproj", "{DF0BACA0-2E6B-BC16-FF7B-CC0A26DA4A0B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,11 +27,15 @@ Global
 		{A92AD51A-94AD-F2A7-DFFB-B116BDF6F62D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A92AD51A-94AD-F2A7-DFFB-B116BDF6F62D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A92AD51A-94AD-F2A7-DFFB-B116BDF6F62D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF0BACA0-2E6B-BC16-FF7B-CC0A26DA4A0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF0BACA0-2E6B-BC16-FF7B-CC0A26DA4A0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF0BACA0-2E6B-BC16-FF7B-CC0A26DA4A0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF0BACA0-2E6B-BC16-FF7B-CC0A26DA4A0B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																																																																										GlobalSection(MonoDevelopProperties) = preSolution
+																																																																																	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
