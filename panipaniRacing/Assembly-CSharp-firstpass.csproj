@@ -57,6 +57,7 @@
      <None Include="Assets\Nebula Pack\Nebula Pack - Readme.txt" />
      <None Include="Assets\MEDIEVAL_ANIMATIONS_MEGA_PACK_new\Horseman\Horseman_motiondata.xml" />
      <None Include="Assets\Standard Assets\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
+     <None Include="Assets\Easy Destructible Wall\readme.txt" />
      <None Include="Assets\Goblin\goblin_notes.txt" />
      <None Include="Assets\MEDIEVAL_ANIMATIONS_MEGA_PACK_new\Bow\bow_motiondata.xml" />
      <None Include="Assets\Nebula Pack\Skybox Green Nebula\Green Nebula - Readme.txt" />
