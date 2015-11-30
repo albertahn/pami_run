@@ -1,9 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/04.Script/UIctrl.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/04.Script/player/Warior_ctrl.cs">
     <Files>
-      <File FileName="Assets/04.Script/player/HorseCtrl.cs" Line="4" Column="41" />
-      <File FileName="Assets/04.Script/player/Warior_ctrl.cs" Line="227" Column="3" />
+      <File FileName="Assets/04.Script/player/Warior_ctrl.cs" Line="229" Column="2" />
+      <File FileName="Assets/04.Script/player/HorseCtrl.cs" Line="1" Column="1" />
       <File FileName="Assets/04.Script/player/CsPangpangAni.cs" Line="1" Column="1" />
       <File FileName="Assets/04.Script/GameState.cs" Line="1" Column="1" />
       <File FileName="Assets/04.Script/GameCtrl.cs" Line="1" Column="1" />

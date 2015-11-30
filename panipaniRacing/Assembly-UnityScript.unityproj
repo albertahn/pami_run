@@ -46,27 +46,6 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Cleaver Warrior\Scripts\Character3rdPerson.js" />
-     <Compile Include="Assets\Cleaver Warrior\Scripts\CharacterCamera.js" />
-     <Compile Include="Assets\Cleaver Warrior\Scripts\CopyAnimation.js" />
-     <Compile Include="Assets\Cleaver Warrior\Scripts\Delete Triangles Script\RestoreTriangles.js" />
-     <Compile Include="Assets\Cleaver Warrior\Scripts\Delete Triangles Script\TrianglesDelete.js" />
-     <Compile Include="Assets\Cleaver Warrior\Scripts\Delete Triangles Script\TrianglesDeleteBounds.js" />
-     <Compile Include="Assets\Cleaver Warrior\Scripts\ResetPosition.js" />
-     <Compile Include="Assets\Cleaver Warrior\Scripts\mipmap2.js" />
-     <Compile Include="Assets\Cleaver Warrior\Test World\Scripts\CameraWaterFog.js" />
-     <Compile Include="Assets\Cleaver Warrior\Test World\Scripts\CopyMesh.js" />
-     <Compile Include="Assets\Cleaver Warrior\Test World\Scripts\CreateFloor.js" />
-     <Compile Include="Assets\Cleaver Warrior\Test World\Scripts\DisableParticleDistance.js" />
-     <Compile Include="Assets\Cleaver Warrior\Test World\Scripts\Fog.js" />
-     <Compile Include="Assets\Cleaver Warrior\Test World\Scripts\HideCursor.js" />
-     <Compile Include="Assets\Cleaver Warrior\Test World\Scripts\LabelTransform.js" />
-     <Compile Include="Assets\Cleaver Warrior\Test World\Scripts\ResetLevel.js" />
-     <Compile Include="Assets\Cleaver Warrior\Test World\Scripts\Sun.js" />
-     <Compile Include="Assets\Cleaver Warrior\Test World\Scripts\TestWorldLabels.js" />
-     <Compile Include="Assets\Cleaver Warrior\Test World\Scripts\WaterAreas.js" />
-     <Compile Include="Assets\Cleaver Warrior\Test World\Scripts\WaterFlipNormals.js" />
-     <Compile Include="Assets\Cleaver Warrior\Test World\Scripts\WaterWave.js" />
      <Compile Include="Assets\Easy Destructible Wall\Scripts\General\DestructionManager.js" />
      <Compile Include="Assets\Easy Destructible Wall\Scripts\General\Interface.js" />
      <Compile Include="Assets\Easy Destructible Wall\Scripts\General\RB_Sleep.js" />
