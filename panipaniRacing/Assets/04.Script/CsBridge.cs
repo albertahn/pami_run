@@ -29,6 +29,7 @@ public class CsBridge : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+
 		countBridge = 0;
 		newBridge = GameObject.Find ("StartBridge");
 		oldBridge = GameObject.Find ("OldBridge");

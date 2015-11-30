@@ -5,7 +5,7 @@ public class HorseCtrl : MonoBehaviour {
 	public GUISkin skin;
 	GameObject manager;
 	
-	int speedForward = 32;
+	int speedForward = 12;
 	int speedSide = 10;
 	int jumpPower = 200;
 	
