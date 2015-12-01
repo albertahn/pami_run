@@ -1,14 +1,13 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/04.Script/player/Warior_ctrl.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Standard Assets/Character Controllers/Sources/Scripts/ThirdPersonController.js">
     <Files>
-      <File FileName="Assets/04.Script/player/Warior_ctrl.cs" Line="229" Column="2" />
-      <File FileName="Assets/04.Script/player/HorseCtrl.cs" Line="1" Column="1" />
-      <File FileName="Assets/04.Script/player/CsPangpangAni.cs" Line="1" Column="1" />
-      <File FileName="Assets/04.Script/GameState.cs" Line="1" Column="1" />
-      <File FileName="Assets/04.Script/GameCtrl.cs" Line="1" Column="1" />
-      <File FileName="Assets/04.Script/LookAtCamera.cs" Line="1" Column="1" />
-      <File FileName="Assets/04.Script/UIctrl.cs" Line="38" Column="30" />
+      <File FileName="../../../unity_stuff/bob-master/Assets/02.Scripts/FireCtrl.cs" Line="154" Column="32" />
+      <File FileName="../../../unity_stuff/bob-master/Assets/02.Scripts/ArrowCtrl.cs" Line="1" Column="1" />
+      <File FileName="Assets/Game 11/arrow_stuff/FireCtrl.cs" Line="48" Column="10" />
+      <File FileName="Assets/Game 11/arrow_stuff/ArrowCtrl.cs" Line="1" Column="1" />
+      <File FileName="Assets/Standard Assets/Character Controllers/Sources/Scripts/ThirdPersonCamera.js" Line="145" Column="1" />
+      <File FileName="Assets/Standard Assets/Character Controllers/Sources/Scripts/ThirdPersonController.js" Line="351" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

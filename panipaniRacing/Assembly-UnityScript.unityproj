@@ -19,7 +19,7 @@
 	<DebugType>full</DebugType>
 	<Optimize>false</Optimize>
 	<OutputPath>Temp\bin\Debug\</OutputPath>
-	<DefineConstants>DEBUG;TRACE;UNITY_4_6_6;UNITY_4_6;UNITY_ANDROID;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_IL2CPP;INCLUDE_WP8SUPPORT;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_4_6_FEATURES;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;UNITY5_SCRIPTING_IN_UNITY4;ENABLE_CACHING;ENABLE_CLOTH;UNITY_ANDROID_API;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_MONO;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE</DefineConstants>
+	<DefineConstants>DEBUG;TRACE;UNITY_4_6_0;UNITY_4_6;UNITY_ANDROID;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_4_6_FEATURES;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;UNITY_ANDROID_API;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_OSX;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE</DefineConstants>
 	<ErrorReport>prompt</ErrorReport>
 	<WarningLevel>4</WarningLevel>
 	<NoWarn>0169</NoWarn>
@@ -39,10 +39,10 @@
 	<Reference Include="System.Core" />
 	<Reference Include="System.Xml.Linq" />
 	<Reference Include="UnityEngine">
-	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
@@ -60,6 +60,7 @@
      <Compile Include="Assets\Game 10\Script\Javascript\Game10_Splat.js" />
      <Compile Include="Assets\Game 11\Script\Javascript\Game11_InstantiateLevel.js" />
      <Compile Include="Assets\Game 11\Script\Javascript\Game11_Player.js" />
+     <Compile Include="Assets\Game 11\Script\SmoothFollow.js" />
      <Compile Include="Assets\Game 2\Script\Javascript\Game2_Bullet.js" />
      <Compile Include="Assets\Game 2\Script\Javascript\Game2_Enemy.js" />
      <Compile Include="Assets\Game 2\Script\Javascript\Game2_Player.js" />
@@ -85,21 +86,39 @@
      <Compile Include="Assets\Game 9\Script\Javascript\Game9_Explosion.js" />
      <Compile Include="Assets\Game 9\Script\Javascript\Game9_Player.js" />
      <Compile Include="Assets\Game 9\Script\Javascript\Game9_SpawnEnemy.js" />
+     <Compile Include="Assets\MagicalEffects\Scripts\FxGateA_Add.js" />
+     <Compile Include="Assets\MagicalEffects\Scripts\fps.js" />
      <Compile Include="Assets\_Script\animation.js" />
+     <None Include="Assets\Plugins\Android\unityads\res\layout\unityads_view_video_play.xml" />
      <None Include="Assets\MEDIEVAL_ANIMATIONS_MEGA_PACK_new\2Weapons\2W_motiondata.xml" />
+     <None Include="Assets\Plugins\Android\unityads\proguard-project.txt" />
      <None Include="Assets\MEDIEVAL_ANIMATIONS_MEGA_PACK_new\Halberd\Halberd_motiondata.xml" />
+     <None Include="Assets\Plugins\Android\unityads\build.xml" />
      <None Include="Assets\MEDIEVAL_ANIMATIONS_MEGA_PACK_new\Wisard&apos;s\Wizard_motiondata.xml" />
+     <None Include="Assets\Plugins\Android\unityads\res\layout\unityads_button_audio_toggle.xml" />
      <None Include="Assets\Dungeon Construction Kit\Prefabs\ReadMe.txt" />
      <None Include="Assets\MEDIEVAL_ANIMATIONS_MEGA_PACK_new\Horseman\Horseman_motiondata.xml" />
+     <None Include="Assets\Plugins\Android\unityads\res\drawable\unityads_background_button_pause.xml" />
      <None Include="Assets\Standard Assets\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
      <None Include="Assets\Easy Destructible Wall\readme.txt" />
+     <None Include="Assets\Plugins\Android\unityads\res\drawable\unityads_icon_speaker_triangle.xml" />
      <None Include="Assets\Goblin\goblin_notes.txt" />
+     <None Include="Assets\Plugins\Android\unityads\res\values\strings.xml" />
+     <None Include="Assets\Plugins\Android\unityads\res\drawable\unityads_icon_speaker_waves.xml" />
      <None Include="Assets\MEDIEVAL_ANIMATIONS_MEGA_PACK_new\Bow\bow_motiondata.xml" />
+     <None Include="Assets\Plugins\Android\unityads\res\drawable\unityads_icon_speaker_base.xml" />
+     <None Include="Assets\Plugins\Android\unityads\res\drawable\unityads_icon_play.xml" />
      <None Include="Assets\Goblin\goblin_motiondata.xml" />
      <None Include="Assets\Goblin\Standard Assets\shader\DifBumpSpecTransp.shader" />
+     <None Include="Assets\Flare_Effect_V1\Documentation\02 - How to create an explosion.txt" />
+     <None Include="Assets\Flare_Effect_V1\Documentation\03 - HTSpriteSheet.cs parameters.txt" />
      <None Include="Assets\Dungeon Construction Kit\Scenes\ReadMe.txt" />
+     <None Include="Assets\Plugins\Android\unityads\res\layout\unityads_button_pause.xml" />
+     <None Include="Assets\Plugins\Android\unityads\res\layout\unityads_view_video_paused.xml" />
+     <None Include="Assets\Flare_Effect_V1\Documentation\01 - Package description.txt" />
+     <None Include="Assets\Plugins\Android\unityads\AndroidManifest.xml" />
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.6/UnityEngine.UI.dll</HintPath>
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

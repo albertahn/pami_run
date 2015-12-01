@@ -18,7 +18,7 @@ public class Game11_InstantiateLevel : MonoBehaviour
 	void Start ()
 	{
 		//Find player
-		player = GameObject.Find("Player").transform;		
+		player = GameObject.Find("Horse_Prefab").transform;		
 		//Find old platforms
 		oldPlatforms = GameObject.Find("OldPlatforms");
 		//Find new platforms

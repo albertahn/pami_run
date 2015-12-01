@@ -5,6 +5,10 @@ Project("{FA77F8FF-F939-3F87-5745-FA66D2F73E05}") = "panipaniRacing", "Assembly-
 EndProject
 Project("{FA77F8FF-F939-3F87-5745-FA66D2F73E05}") = "panipaniRacing", "Assembly-CSharp-vs.csproj", "{1E8471A1-4F6C-AAB1-DD3C-AE27C2909E62}"
 EndProject
+Project("{FA77F8FF-F939-3F87-5745-FA66D2F73E05}") = "panipaniRacing", "Assembly-CSharp-Editor-firstpass-vs.csproj", "{BA7AE4F8-E5A8-3559-B1B3-DC11FC3D3D66}"
+EndProject
+Project("{FA77F8FF-F939-3F87-5745-FA66D2F73E05}") = "panipaniRacing", "Assembly-CSharp-Editor-vs.csproj", "{F866F704-8C6E-5E93-89A6-5768A4614B50}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,11 +23,19 @@ Global
 		{1E8471A1-4F6C-AAB1-DD3C-AE27C2909E62}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E8471A1-4F6C-AAB1-DD3C-AE27C2909E62}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E8471A1-4F6C-AAB1-DD3C-AE27C2909E62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA7AE4F8-E5A8-3559-B1B3-DC11FC3D3D66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA7AE4F8-E5A8-3559-B1B3-DC11FC3D3D66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA7AE4F8-E5A8-3559-B1B3-DC11FC3D3D66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA7AE4F8-E5A8-3559-B1B3-DC11FC3D3D66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F866F704-8C6E-5E93-89A6-5768A4614B50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F866F704-8C6E-5E93-89A6-5768A4614B50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F866F704-8C6E-5E93-89A6-5768A4614B50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F866F704-8C6E-5E93-89A6-5768A4614B50}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																																																																																																			GlobalSection(MonoDevelopProperties) = preSolution
+																																																																																																																GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1

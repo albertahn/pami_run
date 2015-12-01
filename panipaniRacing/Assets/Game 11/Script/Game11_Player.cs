@@ -5,7 +5,7 @@ public class Game11_Player : MonoBehaviour
 {
 	public GUISkin skin;							//GUI Skin
 	public float speedLeftRight = 2000;				//Move left and right speed
-	public float speedForward = 3000;				//Move forward speed
+	public float speedForward = 1;				//Move forward speed
 	public float speedJump;							//Jump Speed
 	public float gravity = 20;						//Gravity
 	private bool dead;								//Are we dead
@@ -19,16 +19,19 @@ public class Game11_Player : MonoBehaviour
 	private GameObject goCamera;					//Main Camera
 	private int dir;								//Move direction (the way we are looking)
 	private Vector2 startTouchPos;					//The first position we touch
-	
+
+	public simpleAds admanager;
 	void Start ()
 	{
 		//Set the screen orientation to portrait
-		Screen.orientation = ScreenOrientation.Portrait;
+		//Screen.orientation = ScreenOrientation.Portrait;
 		//Set the sleep time to nerver
 		Screen.sleepTimeout = SleepTimeout.NeverSleep;
 		
 		//Find Camera
 		goCamera = GameObject.Find("Main Camera");
+
+		admanager = GameObject.Find("AdManager").GetComponent<simpleAds>();
 	}
 	
 	void Update()
@@ -47,7 +50,7 @@ public class Game11_Player : MonoBehaviour
         if (Physics.Raycast(transform.position, Vector3.down, out hit,1))
 		{
 			//If it is not the player
-            if (hit.transform.gameObject.tag != "Player")
+            if (hit.transform.gameObject.tag != "Horse_Prefab")
 			{
 				//We are grounded
             	isGrounded = true;
@@ -55,6 +58,7 @@ public class Game11_Player : MonoBehaviour
 		}
 		else
 		{
+			//Debug.Log("is grond false");
 			//We are in the air
 			isGrounded = false;
 		}
@@ -92,7 +96,9 @@ public class Game11_Player : MonoBehaviour
 			//We can move left
 			canMoveLeft = true;
 		}
-	}
+	}// end move update
+
+
 	
 	void MoveUpdate()
 	{
@@ -120,8 +126,11 @@ public class Game11_Player : MonoBehaviour
 				moveDirection.x = 0;
 			}
 			//If get Space key down and we can jump and is on the ground
-			if (Input.GetKeyDown(KeyCode.Space) && canJump && isGrounded)
+			if (Input.GetKeyDown(KeyCode.Space) && canJump )
 			{
+
+				Debug.Log(""+isGrounded);
+
 				//Set canJump to false
 				canJump = false;
 				//Add up force
@@ -142,22 +151,23 @@ public class Game11_Player : MonoBehaviour
 				Rotate("Left");
 			}
 		}
-		//If the game is running on a android device
-		else
+//If the game is running on a android device------------------------------------------------------------------
+		else if(Application.platform == RuntimePlatform.Android ||
+		        Application.platform == RuntimePlatform.IPhonePlayer)
 		{
 			//moveDirection x = the phone tilt value
-			moveDirection.x = -Input.acceleration.y;
+			moveDirection.x =  Input.acceleration.x; //y
 			//If moveDirection x is bigger than 0.15 and we can move right
 			if (moveDirection.x > 0.15f && canMoveRight)
 			{
 				//Set moveDirection x to 1
-				moveDirection.x = 1f;
+				moveDirection.x = 0.5f;
 			}
 			//If moveDirection x is less than -0.15 and we can move left
 			else if (moveDirection.x < -0.15f && canMoveLeft)
 			{
 				//Set moveDirection x to -1
-				moveDirection.x = -1f;
+				moveDirection.x = -0.5f;
 			}
 			else
 			{
@@ -178,13 +188,16 @@ public class Game11_Player : MonoBehaviour
 	            if (touch.phase == TouchPhase.Moved)
 				{
 					//If we can jump and is grounded and touch position y is bigger than first touch position y + 100
-					if (canJump && isGrounded && touch.position.y > startTouchPos.y + 100)
+					if (canJump && touch.position.y > startTouchPos.y + 100)
 					{
 						//Set canJump to false
 						canJump = false;
 						//Add up force
+						animation.Play ("horse_jump");
 						rigidbody.AddForce(Vector3.up * 100 * speedJump);
 						//Start WaitToJump
+						 new WaitForSeconds(1);
+		animation.Play ("horse_galloping");
 						StartCoroutine("WaitToJump");
 					}
 					//If we can turn and touch position x is bigger than first touch position x + 100
@@ -203,10 +216,11 @@ public class Game11_Player : MonoBehaviour
 			}
 		}
 		
-		//Move the player
+//Move the player
 		transform.Translate(new Vector3(moveDirection.x * speedLeftRight,0,speedForward) * Time.deltaTime,Space.Self);
 	}
-	
+//triger
+
 	void OnTriggerEnter(Collider other)
 	{
 		//If we are in a enemy trigger
@@ -214,6 +228,13 @@ public class Game11_Player : MonoBehaviour
 		{
 			//Kill
 			dead = true;
+			int died = PlayerPrefs.GetInt("died");
+			PlayerPrefs.SetInt("died",died+1);
+			Debug.Log("died: "+died);
+			if(died  % 3 ==2 ){
+			admanager.ShowAd();
+			}
+
 		}
 		//If we are in a turning trigger
 		if (other.tag == "Turning")
@@ -239,7 +260,7 @@ public class Game11_Player : MonoBehaviour
 			canTurn = false;
 		}
 	}
-	
+//gui	
 	void OnGUI()
 	{
 		GUI.skin = skin;
@@ -255,6 +276,8 @@ public class Game11_Player : MonoBehaviour
 		//If we are dead
 		if (dead)
 		{
+
+
 			//Play Again Buttom
 			if(GUI.Button(new Rect(Screen.width / 2 - 90,Screen.height / 2 - 60,180,50),"Play Again"))
 			{
@@ -275,7 +298,7 @@ public class Game11_Player : MonoBehaviour
 		//We can jump
 		canJump = true;
 	}
-	
+//rotate	
 	void Rotate(string _dir)
 	{
 		//We can not rotate
