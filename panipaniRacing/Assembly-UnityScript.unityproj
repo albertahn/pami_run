@@ -110,12 +110,9 @@
      <None Include="Assets\Plugins\Android\unityads\res\drawable\unityads_icon_play.xml" />
      <None Include="Assets\Goblin\goblin_motiondata.xml" />
      <None Include="Assets\Goblin\Standard Assets\shader\DifBumpSpecTransp.shader" />
-     <None Include="Assets\Flare_Effect_V1\Documentation\02 - How to create an explosion.txt" />
-     <None Include="Assets\Flare_Effect_V1\Documentation\03 - HTSpriteSheet.cs parameters.txt" />
      <None Include="Assets\Dungeon Construction Kit\Scenes\ReadMe.txt" />
      <None Include="Assets\Plugins\Android\unityads\res\layout\unityads_button_pause.xml" />
      <None Include="Assets\Plugins\Android\unityads\res\layout\unityads_view_video_paused.xml" />
-     <None Include="Assets\Flare_Effect_V1\Documentation\01 - Package description.txt" />
      <None Include="Assets\Plugins\Android\unityads\AndroidManifest.xml" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>
@@ -124,8 +121,6 @@
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
       <Project>{B0FBFF50-8416-34EC-65BD-0E855DD4EE28}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
-    <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
-      <Project>{A92AD51A-94AD-F2A7-DFFB-B116BDF6F62D}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

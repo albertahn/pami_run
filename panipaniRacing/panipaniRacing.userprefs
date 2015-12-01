@@ -1,12 +1,12 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Standard Assets/Character Controllers/Sources/Scripts/ThirdPersonController.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Standard Assets/Character Controllers/Sources/Scripts/ThirdPersonCamera.js">
     <Files>
-      <File FileName="../../../unity_stuff/bob-master/Assets/02.Scripts/FireCtrl.cs" Line="154" Column="32" />
-      <File FileName="../../../unity_stuff/bob-master/Assets/02.Scripts/ArrowCtrl.cs" Line="1" Column="1" />
-      <File FileName="Assets/Game 11/arrow_stuff/FireCtrl.cs" Line="48" Column="10" />
-      <File FileName="Assets/Game 11/arrow_stuff/ArrowCtrl.cs" Line="1" Column="1" />
       <File FileName="Assets/Standard Assets/Character Controllers/Sources/Scripts/ThirdPersonCamera.js" Line="145" Column="1" />
+      <File FileName="../../../unity_stuff/bob-master/Assets/02.Scripts/FireCtrl.cs" Line="1" Column="1" />
+      <File FileName="../../../unity_stuff/bob-master/Assets/02.Scripts/ArrowCtrl.cs" Line="1" Column="1" />
+      <File FileName="Assets/Game 11/arrow_stuff/FireCtrl.cs" Line="1" Column="1" />
+      <File FileName="Assets/Game 11/arrow_stuff/ArrowCtrl.cs" Line="1" Column="1" />
       <File FileName="Assets/Standard Assets/Character Controllers/Sources/Scripts/ThirdPersonController.js" Line="351" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
