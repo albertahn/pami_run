@@ -97,7 +97,10 @@
      <None Include="Assets\MEDIEVAL_ANIMATIONS_MEGA_PACK_new\Wisard&apos;s\Wizard_motiondata.xml" />
      <None Include="Assets\Plugins\Android\unityads\res\layout\unityads_button_audio_toggle.xml" />
      <None Include="Assets\Dungeon Construction Kit\Prefabs\ReadMe.txt" />
+     <None Include="Assets\CartoonForest\Shader\AlphaTest-DiffuseDoublesided.shader" />
+     <None Include="Assets\Readme.txt" />
      <None Include="Assets\MEDIEVAL_ANIMATIONS_MEGA_PACK_new\Horseman\Horseman_motiondata.xml" />
+     <None Include="Assets\CartoonForest\Shader\Mobile Transparent Vertex Color.shader" />
      <None Include="Assets\Plugins\Android\unityads\res\drawable\unityads_background_button_pause.xml" />
      <None Include="Assets\Standard Assets\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
      <None Include="Assets\Easy Destructible Wall\readme.txt" />
@@ -106,6 +109,7 @@
      <None Include="Assets\Plugins\Android\unityads\res\values\strings.xml" />
      <None Include="Assets\Plugins\Android\unityads\res\drawable\unityads_icon_speaker_waves.xml" />
      <None Include="Assets\MEDIEVAL_ANIMATIONS_MEGA_PACK_new\Bow\bow_motiondata.xml" />
+     <None Include="Assets\CartoonForest\Shader\AlphaTest-DiffuseBack.shader" />
      <None Include="Assets\Plugins\Android\unityads\res\drawable\unityads_icon_speaker_base.xml" />
      <None Include="Assets\Plugins\Android\unityads\res\drawable\unityads_icon_play.xml" />
      <None Include="Assets\Goblin\goblin_motiondata.xml" />
@@ -121,6 +125,8 @@
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
       <Project>{B0FBFF50-8416-34EC-65BD-0E855DD4EE28}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+    <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
+      <Project>{A92AD51A-94AD-F2A7-DFFB-B116BDF6F62D}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
