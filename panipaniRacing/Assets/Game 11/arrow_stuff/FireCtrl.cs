@@ -15,7 +15,7 @@ public class FireCtrl : MonoBehaviour {
 	private Transform tr;
 
 	public float time,time2,time3,time4;//time은 기본공격, time2는 특수공격.
-	private float basicAttackCool=0.1f;
+	private float basicAttackCool=2.1f;
 	public float specialAttackCool = 10;
 	private float specialAttack2Cool = 1;
 	public float quickCool=10.0f;
@@ -36,6 +36,8 @@ public class FireCtrl : MonoBehaviour {
 		tr = GetComponent<Transform> ();
 
 
+
+
 		//anime
 
 		Fire();
@@ -45,7 +47,7 @@ public class FireCtrl : MonoBehaviour {
 
 	void Update () {
 
-		Fire();
+		Fire ();
 
 	}//end
 
@@ -55,6 +57,8 @@ public class FireCtrl : MonoBehaviour {
 
 	
 private bool fireBool;
+
+
 	public void Fire(){
 
 
@@ -62,11 +66,14 @@ private bool fireBool;
 	fireBool = true;
 	
 	if (Time.time - time > basicAttackCool) {
+
 		time = Time.time;
 		StartCoroutine(this.CreateArrow());
 		
 	}
-}
+
+
+}//end fire
 	void No_Fire(){
 		fireBool = false;
 	}
