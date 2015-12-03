@@ -15,11 +15,14 @@ public class HorseFollowCam : MonoBehaviour {
 
 	
 	void Start(){
+
 		dist = 10.0f;
 		height = 5.0f;
 		dampRotate = 5.0f;
 		
 		tr = transform;
+
+		Screen.SetResolution (800, 600, false);
 	}
 	
 	void LateUpdate(){

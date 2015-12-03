@@ -7,6 +7,7 @@ public class Game11_InstantiateLevel : MonoBehaviour
 	public GameObject[] platforms;		//The platforms we can spawn
 	public GameObject[] coins;			//The coins prefab we can spawn
 	public GameObject platformTurning;	//The turn platform prefab
+	public GameObject lastblock;
 	
 	private GameObject oldPlatforms;	//All the old platforms
 	private GameObject newPlatforms;	//All the new platforms
@@ -79,10 +80,18 @@ public class Game11_InstantiateLevel : MonoBehaviour
 			GameObject _coin = coins[Random.Range(0,3)];
 			
 			//If it is the last platform we are spawning
-			if (i == 9)
+			if (i == 19)
 			{
 				//Set the spawn prefab to turn platform
 				_platform = platformTurning;
+				//We cant spawn coins
+				spawnCoin = false;
+			}
+
+			if (i == 9)
+			{
+				//Set the spawn prefab to turn platform
+				_platform = lastblock;
 				//We cant spawn coins
 				spawnCoin = false;
 			}

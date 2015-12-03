@@ -40,6 +40,5 @@ public class GameCtrl : MonoBehaviour {
 
 		Application.LoadLevel(Application.loadedLevel);
 
-
 	}//re
 }

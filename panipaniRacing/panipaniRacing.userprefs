@@ -1,9 +1,15 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Game 11/arrow_stuff/FireCtrl.cs">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Game 11/Script/Game11_Player.cs">
     <Files>
-      <File FileName="Assets/Game 11/arrow_stuff/FireCtrl.cs" Line="28" Column="2" />
-      <File FileName="Assets/Game 11/arrow_stuff/ArrowCtrl.cs" Line="1" Column="1" />
+      <File FileName="Assets/04.Script/player/HorseCtrl.cs" Line="90" Column="12" />
+      <File FileName="Assets/Game 11/Script/Game11_Player.cs" Line="298" Column="25" />
+      <File FileName="Assets/Game 11/Script/Game11_InstantiateLevel.cs" Line="95" Column="26" />
+      <File FileName="Assets/04.Script/ads/simpleAds.cs" Line="1" Column="1" />
+      <File FileName="Assets/04.Script/CsFollowCam.cs" Line="18" Column="16" />
+      <File FileName="Assets/04.Script/GameCtrl.cs" Line="39" Column="28" />
+      <File FileName="Assets/04.Script/UIctrl.cs" Line="90" Column="37" />
+      <File FileName="Assets/Game 11/Script/HorseFollowCam.cs" Line="18" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

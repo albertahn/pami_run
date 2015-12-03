@@ -1,8 +1,10 @@
 using UnityEngine;
 using System.Collections;
-
+using UnityEngine.UI;
 public class Game11_Player : MonoBehaviour
 {
+
+	public Text highScoreText;
 	public GUISkin skin;							//GUI Skin
 	public float speedLeftRight = 2000;				//Move left and right speed
 	public float speedForward = 1;				//Move forward speed
@@ -20,9 +22,15 @@ public class Game11_Player : MonoBehaviour
 	private int dir;								//Move direction (the way we are looking)
 	private Vector2 startTouchPos;					//The first position we touch
 
+	public GameObject scoreImage;
+
+
 	public simpleAds admanager;
+
 	void Start ()
 	{
+
+
 		//Set the screen orientation to portrait
 		//Screen.orientation = ScreenOrientation.Portrait;
 		//Set the sleep time to nerver
@@ -135,8 +143,12 @@ public class Game11_Player : MonoBehaviour
 				canJump = false;
 				//Add up force
 				rigidbody.AddForce(Vector3.up * 100 * speedJump);
+				animation.Play ("horse_jump");
+				new WaitForSeconds(1);
+				animation.Play ("horse_galloping");
 				//Start WaitToJump
 				StartCoroutine("WaitToJump");
+
 			}
 			//If can turn and get E key down
 			if (canTurn && Input.GetKeyDown(KeyCode.E))
@@ -188,7 +200,7 @@ public class Game11_Player : MonoBehaviour
 	            if (touch.phase == TouchPhase.Moved)
 				{
 					//If we can jump and is grounded and touch position y is bigger than first touch position y + 100
-					if (canJump && touch.position.y > startTouchPos.y + 100)
+					if (canJump && touch.position.y-startTouchPos.y > 50)
 					{
 						//Set canJump to false
 						canJump = false;
@@ -197,17 +209,17 @@ public class Game11_Player : MonoBehaviour
 						rigidbody.AddForce(Vector3.up * 100 * speedJump);
 						//Start WaitToJump
 						 new WaitForSeconds(1);
-		animation.Play ("horse_galloping");
+		            animation.Play ("horse_galloping");
 						StartCoroutine("WaitToJump");
 					}
 					//If we can turn and touch position x is bigger than first touch position x + 100
-					if (canTurn && touch.position.x > startTouchPos.x + 100)
+					if (canTurn && touch.position.x-startTouchPos.x  >  100)
 					{
 						//Rotate right
 						Rotate("Right");
 					}
 					//If we can turn and touch position x is less than first touch position x - 100
-					if (canTurn && touch.position.x < startTouchPos.x - 100)
+					if (canTurn && touch.position.x - startTouchPos.x < - 100)
 					{
 						//Rotate left
 						Rotate("Left");
@@ -218,7 +230,16 @@ public class Game11_Player : MonoBehaviour
 		
 //Move the player
 		transform.Translate(new Vector3(moveDirection.x * speedLeftRight,0,speedForward) * Time.deltaTime,Space.Self);
-	}
+
+		if(dead ==false){
+
+			GameObject.Find("Canvas").transform.Find("PlayButton").active = false;
+
+
+		}
+
+
+	}//update end
 //triger
 
 	void OnTriggerEnter(Collider other)
@@ -231,7 +252,7 @@ public class Game11_Player : MonoBehaviour
 			int died = PlayerPrefs.GetInt("died");
 			PlayerPrefs.SetInt("died",died+1);
 			Debug.Log("died: "+died);
-			if(died  % 3 ==2 ){
+			if(died  % 7 ==6 ){
 			admanager.ShowAd();
 			}
 
@@ -250,6 +271,11 @@ public class Game11_Player : MonoBehaviour
 			//Destroy coin
 			Destroy(other.gameObject);
 		}
+
+		if(other.tag=="lastblock"){
+
+			goCamera.GetComponent<Game11_InstantiateLevel>().SpawnPlatform("forward");
+		}
 	}
 	void OnTriggerExit(Collider other)
 	{
@@ -267,28 +293,38 @@ public class Game11_Player : MonoBehaviour
 		
 		//Score
 		GUI.Label(new Rect(10,10,300,300),((int)score).ToString());
-		
+
+
+		Text text = scoreImage.GetComponent<Text>();
+
+		text.text =((int)score).ToString();
 		//Menu Button
-		if(GUI.Button(new Rect(Screen.width - 120,0,120,40),"Menu"))
+		/*if(GUI.Button(new Rect(Screen.width - 120,0,120,40),"Menu"))
 		{
 			Application.LoadLevel("Menu");
 		}
-		//If we are dead
+		//If we are dead*/
 		if (dead)
 		{
+			GameObject.Find("Canvas").transform.Find("PlayButton").active = true;
 
 
 			//Play Again Buttom
-			if(GUI.Button(new Rect(Screen.width / 2 - 90,Screen.height / 2 - 60,180,50),"Play Again"))
+			/*if(GUI.Button(new Rect(Screen.width / 2 - 90,Screen.height / 2 - 60,180,50),"Play Again"))
 			{
 				Application.LoadLevel("Game 11");
 			}
 			//Menu Button
-			if(GUI.Button(new Rect(Screen.width / 2 - 90,Screen.height / 2,180,50),"Menu"))
-			{
-				Application.LoadLevel("Menu");
-			}
+               */
 		}	
+	}
+
+	public void PlayAgain(){
+
+		Application.LoadLevel("Game 11");
+
+		//
+		GameObject.Find("PlayButton").active =  false;
 	}
 	
 	IEnumerator WaitToJump()
