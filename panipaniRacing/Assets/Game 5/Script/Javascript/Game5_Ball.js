@@ -21,5 +21,7 @@
 	function OnCollisionEnter(collision : Collision)
 	{
 		//We are hit
+		
+		//this.transform.rigidbody.velocity = Vector3.Reflect( collision.relativeVelocity*-1, collision.contacts[0].normal );
 		hit = true;
 	}

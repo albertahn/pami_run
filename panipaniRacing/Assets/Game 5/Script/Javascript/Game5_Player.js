@@ -1,5 +1,5 @@
 	public var skin : GUISkin;					//GUI skin
-	public var balls = 3;						//Balls left
+	public var balls = 33;						//Balls left
 	public var tmpBalls : GameObject[];			//Tmp balls
 	public var ball : GameObject;				//The ball we are using
 	public var prefabBall : GameObject;			//Ball prefab
@@ -90,8 +90,8 @@
 				ball.transform.LookAt(ballStartPosition);
 				//Set isKinematic to false
 				ball.rigidbody.isKinematic = false;
-				//Add forward force
-				ball.rigidbody.AddForce(ball.transform.forward * (275 * Vector3.Distance(touchPosition,ballStartPosition.position)));
+//Add forward force
+				ball.rigidbody.AddForce(ball.transform.forward * (575 * Vector3.Distance(touchPosition,ballStartPosition.position)));
 				//Set ball position
 				ball.transform.position = ballStartPosition.position;
 				
@@ -198,6 +198,9 @@
 		GUI.skin = skin;
 		
 		//Score
+		
+		
+		
 		GUI.Label(new Rect(10,10,300,300),"Score: " + score.ToString());
 		
 		//Menu Button
