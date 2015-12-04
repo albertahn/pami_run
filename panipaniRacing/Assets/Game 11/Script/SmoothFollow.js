@@ -56,5 +56,5 @@ function LateUpdate () {
 	pointy.y = 8.0f;
 	
 	// Always look at the target
-	transform.LookAt (pointy);
+	//transform.LookAt (pointy);
 }

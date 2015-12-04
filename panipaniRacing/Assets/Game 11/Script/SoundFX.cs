@@ -6,6 +6,12 @@ public class SoundFX : MonoBehaviour {
 
 	public AudioClip arrowShootSound;
 
+	public AudioClip arrowHitSound;
+
+	public AudioClip jumpsound;
+
+	public AudioClip horseNigh;
+
 	AudioSource audiosource;
 	// Use this for initialization
 
@@ -13,7 +19,7 @@ public class SoundFX : MonoBehaviour {
 
 		audiosource = GetComponent<AudioSource>();
 		explodeAudio();
-
+		horseNighPlay();
 	}//start
 
 	public void explodeAudio(){
@@ -24,11 +30,24 @@ public class SoundFX : MonoBehaviour {
 
 	public void shootArrow(){
 
-		//audio.Play();
-
 		audio.PlayOneShot(arrowShootSound, 0.7F);
+	}//
+
+	public void arrowHitPlay(){
+
+		audio.PlayOneShot(arrowHitSound);
+	}
 
 
+	public void horseNighPlay(){
+
+
+		audio.PlayOneShot(horseNigh, 0.7F);
+	}
+
+	public void playJumpSound(){
+
+		audio.PlayOneShot(jumpsound, 0.7F);
 	}
 
 }

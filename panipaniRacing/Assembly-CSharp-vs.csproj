@@ -67,11 +67,12 @@
      <Compile Include="Assets\Game 10\Script\Game10_Player.cs" />
      <Compile Include="Assets\Game 10\Script\Game10_SpawnFruit.cs" />
      <Compile Include="Assets\Game 10\Script\Game10_Splat.cs" />
+     <Compile Include="Assets\Game 11\Script\Colide\wallColide.cs" />
      <Compile Include="Assets\Game 11\Script\Game11_InstantiateLevel.cs" />
      <Compile Include="Assets\Game 11\Script\Game11_Player.cs" />
      <Compile Include="Assets\Game 11\Script\HorseFollowCam.cs" />
      <Compile Include="Assets\Game 11\Script\SoundFX.cs" />
-     <Compile Include="Assets\Game 11\arrow_stuff\ArrowCtrl.cs" />
+     <Compile Include="Assets\Game 11\arrow_stuff\ElArrowCtrl.cs" />
      <Compile Include="Assets\Game 11\arrow_stuff\FireCtrl.cs" />
      <Compile Include="Assets\Game 2\Script\Game2_Bullet.cs" />
      <Compile Include="Assets\Game 2\Script\Game2_Enemy.cs" />
@@ -131,7 +132,7 @@
      <None Include="Assets\Plugins\Android\unityads\res\layout\unityads_view_video_paused.xml" />
      <None Include="Assets\Plugins\Android\unityads\AndroidManifest.xml" />
  <Reference Include="Assembly-UnityScript-firstpass">
- <HintPath>/Users/albertan/Documents/git_hub/madhorse_pami_run_12_4/panipaniRacing/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ <HintPath>/Users/albertan/Documents/github/pami_run_score_show/panipaniRacing/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>
