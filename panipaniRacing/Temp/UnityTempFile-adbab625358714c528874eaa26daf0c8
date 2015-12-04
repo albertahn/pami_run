@@ -1,0 +1,98 @@
+-debug
+-target:library
+-nowarn:0169
+-out:'Temp/Assembly-CSharp.dll'
+-r:'/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll'
+-r:'Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll'
+-r:'Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll'
+-r:'/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll'
+-r:'/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll'
+-define:UNITY_4_6_0
+-define:UNITY_4_6
+-define:UNITY_ANDROID
+-define:ENABLE_MICROPHONE
+-define:ENABLE_TEXTUREID_MAP
+-define:ENABLE_UNITYEVENTS
+-define:ENABLE_NEW_HIERARCHY 
+-define:ENABLE_AUDIO_FMOD
+-define:ENABLE_MONO
+-define:ENABLE_TERRAIN
+-define:ENABLE_SUBSTANCE
+-define:ENABLE_GENERICS
+-define:INCLUDE_WP8SUPPORT
+-define:ENABLE_WWW
+-define:ENABLE_IMAGEEFFECTS
+-define:ENABLE_4_6_FEATURES
+-define:INCLUDE_WP_BLUE_SUPPORT
+-define:ENABLE_WEBCAM
+-define:INCLUDE_METROSUPPORT
+-define:RENDER_SOFTWARE_CURSOR
+-define:ENABLE_NETWORK
+-define:ENABLE_PHYSICS
+-define:ENABLE_CACHING
+-define:ENABLE_CLOTH
+-define:UNITY_ANDROID_API
+-define:ENABLE_2D_PHYSICS
+-define:ENABLE_SHADOWS
+-define:ENABLE_AUDIO
+-define:ENABLE_NAVMESH_CARVING
+-define:ENABLE_SINGLE_INSTANCE_BUILD_SETTING
+-define:ENABLE_PROFILER
+-define:UNITY_EDITOR
+-define:UNITY_EDITOR_OSX
+-define:UNITY_TEAM_LICENSE
+-define:UNITY_PRO_LICENSE
+'Assets/04.Script/CsBridge.cs'
+'Assets/04.Script/CsFollowCam.cs'
+'Assets/04.Script/GameCtrl.cs'
+'Assets/04.Script/GameState.cs'
+'Assets/04.Script/LookAtCamera.cs'
+'Assets/04.Script/UIctrl.cs'
+'Assets/04.Script/ads/simpleAds.cs'
+'Assets/04.Script/player/CsHuman.cs'
+'Assets/04.Script/player/CsHumanAni.cs'
+'Assets/04.Script/player/CsPangpang.cs'
+'Assets/04.Script/player/CsPangpangAni.cs'
+'Assets/04.Script/player/HorseCtrl.cs'
+'Assets/04.Script/player/Warior_ctrl.cs'
+'Assets/Game 1/Script/Game1_Background.cs'
+'Assets/Game 1/Script/Game1_Platform.cs'
+'Assets/Game 1/Script/Game1_Player.cs'
+'Assets/Game 10/Script/Game10_Bomb.cs'
+'Assets/Game 10/Script/Game10_Fruit.cs'
+'Assets/Game 10/Script/Game10_Player.cs'
+'Assets/Game 10/Script/Game10_SpawnFruit.cs'
+'Assets/Game 10/Script/Game10_Splat.cs'
+'Assets/Game 11/Script/Game11_InstantiateLevel.cs'
+'Assets/Game 11/Script/Game11_Player.cs'
+'Assets/Game 11/Script/HorseFollowCam.cs'
+'Assets/Game 11/arrow_stuff/ArrowCtrl.cs'
+'Assets/Game 11/arrow_stuff/FireCtrl.cs'
+'Assets/Game 2/Script/Game2_Bullet.cs'
+'Assets/Game 2/Script/Game2_Enemy.cs'
+'Assets/Game 2/Script/Game2_Player.cs'
+'Assets/Game 2/Script/Game2_SpawnEnemy.cs'
+'Assets/Game 3/Script/Game3_Background.cs'
+'Assets/Game 3/Script/Game3_Camera.cs'
+'Assets/Game 3/Script/Game3_Player.cs'
+'Assets/Game 4/Script/Game4_Camera.cs'
+'Assets/Game 4/Script/Game4_Player.cs'
+'Assets/Game 5/Script/Game5_Background.cs'
+'Assets/Game 5/Script/Game5_Ball.cs'
+'Assets/Game 5/Script/Game5_Block.cs'
+'Assets/Game 5/Script/Game5_Enemy.cs'
+'Assets/Game 5/Script/Game5_Number.cs'
+'Assets/Game 5/Script/Game5_Player.cs'
+'Assets/Game 6/Script/Game6_Explosion.cs'
+'Assets/Game 6/Script/Game6_Player.cs'
+'Assets/Game 7/Script/Game7_Player.cs'
+'Assets/Game 8/Script/Game8_Player.cs'
+'Assets/Game 9/Script/Game9_Bullet.cs'
+'Assets/Game 9/Script/Game9_Cloud.cs'
+'Assets/Game 9/Script/Game9_Enemy.cs'
+'Assets/Game 9/Script/Game9_Explosion.cs'
+'Assets/Game 9/Script/Game9_Player.cs'
+'Assets/Game 9/Script/Game9_SpawnEnemy.cs'
+'Assets/Menu/Script/Menu.cs'
+-r:'/Applications/Unity/Unity.app/Contents/Frameworks/Mono/lib/mono/unity/System.Runtime.Serialization.dll'
+-r:'/Applications/Unity/Unity.app/Contents/Frameworks/Mono/lib/mono/unity/System.Xml.Linq.dll'

@@ -1,14 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Game 5/Script/Javascript/Game5_Block.js">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/DynamicElements_Effects/scripts/ParticleWindow.js">
     <Files>
-      <File FileName="Assets/Game 5/Script/Javascript/Game5_Block.js" Line="62" Column="1" />
-      <File FileName="Assets/Game 5/Script/Javascript/Game5_Enemy.js" Line="1" Column="1" />
-      <File FileName="Assets/Game 5/Script/Javascript/Game5_Number.js" Line="24" Column="3" />
-      <File FileName="Assets/Game 5/Script/Javascript/Game5_Player.js" Line="94" Column="56" />
-      <File FileName="Assets/Game 5/Script/Javascript/Game5_Ball.js" Line="25" Column="5" />
-      <File FileName="Assets/Game 5/Script/Game5_Ball.cs" Line="16" Column="3" />
-      <File FileName="Assets/Game 5/Script/Javascript/Game5_Background.js" Line="1" Column="1" />
+      <File FileName="Assets/DynamicElements_Effects/scripts/ParticleWindow.js" Line="33" Column="1" />
+      <File FileName="Assets/04.Script/player/HorseCtrl.cs" Line="17" Column="22" />
+      <File FileName="Assets/DynamicElements_Effects/scripts/Raycast.js" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
