@@ -1,4 +1,4 @@
-	public var skin : GUISkin;					//GUI Skin
+	/*public var skin : GUISkin;					//GUI Skin
 	public var speedLeftRight = 2000.0f;		//Move left and right speed
 	public var speedForward = 3000.0f;			//Move forward speed
 	public var speedJump : float;				//Jump Speed
@@ -310,4 +310,4 @@
 			//Set dir to 3
 			dir = 3;
 		}
-	}
+	}*/

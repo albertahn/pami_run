@@ -1,4 +1,4 @@
-	public var startPlatform : Transform;		//The first platform
+	/*public var startPlatform : Transform;		//The first platform
 	public var platforms : GameObject[];		//The platforms we can spawn
 	public var coins : GameObject[];			//The coins prefab we can spawn
 	public var platformTurning : GameObject;	//The turn platform prefab
@@ -145,4 +145,4 @@
 				coin.transform.parent = newPlatforms.transform;
 			}
 		}
-	}
+	}*/
