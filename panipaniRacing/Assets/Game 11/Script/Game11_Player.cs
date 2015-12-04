@@ -24,6 +24,10 @@ public class Game11_Player : MonoBehaviour
 
 	public GameObject scoreImage;
 
+	public GameObject soundStuff;
+
+
+
 
 	public simpleAds admanager;
 
@@ -235,7 +239,6 @@ public class Game11_Player : MonoBehaviour
 
 			GameObject.Find("Canvas").transform.Find("PlayButton").active = false;
 
-
 		}
 
 
@@ -275,6 +278,9 @@ public class Game11_Player : MonoBehaviour
 		if(other.tag=="lastblock"){
 
 			goCamera.GetComponent<Game11_InstantiateLevel>().SpawnPlatform("forward");
+			soundStuff.GetComponent<SoundFX>().explodeAudio();
+
+
 		}
 	}
 	void OnTriggerExit(Collider other)

@@ -6,6 +6,7 @@ public class FireCtrl : MonoBehaviour {
 	public GameObject arrow;
 
 	public GameObject boom;
+	public GameObject soundStuff;
 	public Transform firePos;
 	public Transform[] SFirePos= new Transform[12];
 	public AudioClip fireSfx;
@@ -69,6 +70,9 @@ private bool fireBool;
 
 		time = Time.time;
 		StartCoroutine(this.CreateArrow());
+
+
+			soundStuff.GetComponent<SoundFX>().shootArrow();
 		
 	}
 
