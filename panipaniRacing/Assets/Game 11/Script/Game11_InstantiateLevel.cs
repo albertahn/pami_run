@@ -15,6 +15,10 @@ public class Game11_InstantiateLevel : MonoBehaviour
 	private Transform player;			//The Player
 	private int dir;					//Move direction 
 	private bool spawnCoin;				//Can we spawn coins
+
+	private GameObject _platform;
+
+	public float laterTime;
 	
 	void Start ()
 	{
@@ -29,22 +33,13 @@ public class Game11_InstantiateLevel : MonoBehaviour
 		
 		//Spawn new platforms
 		SpawnPlatform("Forward");
+
+		laterTime = Time.deltaTime +1140;
 	}
 
 	public void SpawnPlatform(string _dir)
 	{
-		//If direction is left
-		if (_dir == "Left")
-		{
-			//Remove 1
-			dir--;
-		}
-		//If direction is right
-		else if (_dir == "Right")
-		{
-			//Add 1
-			dir++;
-		}
+
 		//If direction is over 3
 		if (dir > 3)
 		{
@@ -75,18 +70,18 @@ public class Game11_InstantiateLevel : MonoBehaviour
 		for (int i = 0; i < 10; i++)
 		{
 			//Set the spawn prefab to the first of all of our platforms
-			GameObject _platform = platforms[0];
+			 _platform = platforms[0];
 			//Get random coin prefab
 			GameObject _coin = coins[Random.Range(0,3)];
 			
 			//If it is the last platform we are spawning
-			if (i == 19)
+			/*if (i == 19)
 			{
 				//Set the spawn prefab to turn platform
 				_platform = platformTurning;
 				//We cant spawn coins
 				spawnCoin = false;
-			}
+			}*/
 
 			if (i == 9)
 			{
@@ -95,8 +90,17 @@ public class Game11_InstantiateLevel : MonoBehaviour
 				//We cant spawn coins
 				spawnCoin = false;
 			}
+
+
+			if(Time.deltaTime > laterTime && i !=9){
+
+				_platform =  platforms[0];
+
+			}else{
+
+
 			//If it is numper 1 4 or 7 we are spawning
-			else if (i == 2 || i == 5 || i == 8)
+			 if (i == 2 || i == 5 || i == 8)
 			{
 				//Get random platform
 				_platform = platforms[Random.Range(1,platforms.Length)];
@@ -116,8 +120,9 @@ public class Game11_InstantiateLevel : MonoBehaviour
 					//We cant spawn coins
 					spawnCoin = false;
 				}
-			}
-			
+			}//else coin
+
+		}//not first 10 seconds
 			//Make new position
 			Vector3 pos = new Vector3(0,0,0);
 			
@@ -159,5 +164,13 @@ public class Game11_InstantiateLevel : MonoBehaviour
 				coin.transform.parent = newPlatforms.transform;
 			}
 		}
-	}
+	}//spawn 
+
+	public void set_platform (){
+
+
+
+	}//set plat
+
+
 }
