@@ -33,6 +33,8 @@ public class Game11_Player : MonoBehaviour
 
 	Text highText;
 
+	public GameObject topScoreObj;
+
 
 
 
@@ -270,24 +272,24 @@ public class Game11_Player : MonoBehaviour
 
 //move speed by score
 
-		if(50 < score && score < 100){
+		if(50 < score && score < 500){
 
 			speedForward =20;
 		}
 
-		if(200>score && score >100){
+		if(1000>score && score >500){
+			speedForward = 25;
+
+		}
+
+		if(1000<score && score< 3000){
+
 			speedForward = 30;
-
 		}
 
-		if(500<score && score< 1000){
-
-			speedForward = 35;
-		}
-
-		if( score > 1000){
+		if( score > 4000){
 			
-			speedForward = 50;
+			speedForward = 35;
 		}
 
 
@@ -379,7 +381,17 @@ public class Game11_Player : MonoBehaviour
 		{
 			GameObject.Find("Canvas").transform.Find("PlayButton").active = true;
 
-		}	
+
+			int highestScore = PlayerPrefs.GetInt("highest_score");
+			int intscore = (int) score;
+
+			if(highestScore < intscore){
+				PlayerPrefs.SetInt("highest_score", intscore);
+
+			}
+			GameObject.Find("Canvas").transform.Find("PlayButton").transform.Find("topscore").GetComponent<Text>().text ="new highest score: "+ PlayerPrefs.GetInt("highest_score");
+
+		}//end if	
 
 
 		scoretext.text = "score: "+ ((int)score).ToString();
