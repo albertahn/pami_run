@@ -166,11 +166,16 @@ public class Game11_InstantiateLevel : MonoBehaviour
 		}
 	}//spawn 
 
-	public void set_platform (){
+	public void PauseGame (){
 
-
+		Time.timeScale = 0;
 
 	}//set plat
 
+	public void UnPause(){
+
+		Time.timeScale = 1;
+
+	}
 
 }

@@ -50,7 +50,7 @@ public class Game11_Player : MonoBehaviour
 		//Screen.orientation = ScreenOrientation.Portrait;
 		//Set the sleep time to nerver
 
-		Screen.SetResolution (960, 640 , true, 60);
+		Screen.SetResolution ( 960,640, true, 60);
 
 		Screen.sleepTimeout = SleepTimeout.NeverSleep;
 		
@@ -108,7 +108,7 @@ public class Game11_Player : MonoBehaviour
 		
 		//If we are hitting a object (left)
 		RaycastHit hitLeft;
-        if (Physics.Raycast(transform.position, -transform.right, out hitLeft,1))
+        if (Physics.Raycast(transform.position, - transform.right, out hitLeft,1))
 		{
 			//If it is a wall
             if (hitLeft.transform.gameObject.name == "Wall")

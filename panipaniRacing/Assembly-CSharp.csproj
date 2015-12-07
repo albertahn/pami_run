@@ -72,6 +72,8 @@
      <Compile Include="Assets\Game 11\Script\Game11_Player.cs" />
      <Compile Include="Assets\Game 11\Script\HorseFollowCam.cs" />
      <Compile Include="Assets\Game 11\Script\SoundFX.cs" />
+     <Compile Include="Assets\Game 11\Script\other\CsExtra.cs" />
+     <Compile Include="Assets\Game 11\Script\other\CsSmoke.cs" />
      <Compile Include="Assets\Game 11\arrow_stuff\ElArrowCtrl.cs" />
      <Compile Include="Assets\Game 11\arrow_stuff\FireCtrl.cs" />
      <Compile Include="Assets\Game 2\Script\Game2_Bullet.cs" />
