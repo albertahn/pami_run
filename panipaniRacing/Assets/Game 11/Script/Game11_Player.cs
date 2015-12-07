@@ -299,8 +299,6 @@ public class Game11_Player : MonoBehaviour
 		if(dead ==false){
 
 
-
-
 			GameObject.Find("Canvas").transform.Find("PlayButton").active = false;
 
 		}
@@ -337,6 +335,9 @@ public class Game11_Player : MonoBehaviour
 		//If we are in a coin trigger
 		if (other.tag == "Coin")
 		{
+			
+			GameObject.Find("SoundStuff").GetComponent<SoundFX>().coinSound();
+
 			//Add 10 to score
 			score += 10;
 			//Destroy coin
@@ -355,10 +356,16 @@ public class Game11_Player : MonoBehaviour
 		if(other.tag=="lastblock"){
 
 			goCamera.GetComponent<Game11_InstantiateLevel>().SpawnPlatform("forward");
-			soundStuff.GetComponent<SoundFX>().explodeAudio();
+			//soundStuff.GetComponent<SoundFX>().explodeAudio();
 
 
 		}
+
+		if(other.tag=="chunkwall"){
+
+			soundStuff.GetComponent<SoundFX>().explodeAudio();
+
+		}//wall
 	}
 	void OnTriggerExit(Collider other)
 	{

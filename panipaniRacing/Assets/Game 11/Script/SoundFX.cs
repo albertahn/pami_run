@@ -12,6 +12,11 @@ public class SoundFX : MonoBehaviour {
 
 	public AudioClip horseNigh;
 
+	public AudioClip personScream;
+
+	public AudioClip coinClip;
+
+
 	AudioSource audiosource;
 	// Use this for initialization
 
@@ -48,6 +53,22 @@ public class SoundFX : MonoBehaviour {
 	public void playJumpSound(){
 
 		audio.PlayOneShot(jumpsound, 0.7F);
+	}
+
+	public void arrowExplode(){
+
+		audio.PlayOneShot(impactExplode, 0.7F);
+	}//arrow
+
+
+	public void personHit(){
+
+		audio.PlayOneShot(personScream, 0.7F);
+	}
+
+	public void coinSound(){
+
+		audio.PlayOneShot(coinClip, 0.7F);
 	}
 
 }

@@ -44,6 +44,8 @@ public class CsExtra : MonoBehaviour {
 	void OnCollisionEnter(Collision coll){
 		if(coll.transform.tag=="Player" || coll.transform.tag=="ARROW" ){
 
+			GameObject.Find("SoundStuff").GetComponent<SoundFX>().personHit();
+
 			int dir =  (int)(transform.parent.eulerAngles.y/90);
 			switch(dir){
 			case 0:	rigidbody.velocity =new Vector3(Random.Range(-5,5),10,20); break;
@@ -57,6 +59,8 @@ public class CsExtra : MonoBehaviour {
 			m_state = myState.hit;
 			animation.Play("hit");
 			timer = Time.time;
+
+
 		}		
 	}
 }

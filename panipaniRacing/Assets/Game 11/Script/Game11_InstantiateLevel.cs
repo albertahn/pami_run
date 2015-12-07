@@ -16,6 +16,8 @@ public class Game11_InstantiateLevel : MonoBehaviour
 	private int dir;					//Move direction 
 	private bool spawnCoin;				//Can we spawn coins
 
+	public GameObject ResumeButton;
+
 	private GameObject _platform;
 
 	public float laterTime;
@@ -170,11 +172,15 @@ public class Game11_InstantiateLevel : MonoBehaviour
 
 		Time.timeScale = 0;
 
+		GameObject.Find("Canvas").transform.Find("resumeButton").active = true;
+
 	}//set plat
 
 	public void UnPause(){
 
 		Time.timeScale = 1;
+
+		GameObject.Find("Canvas").transform.Find("resumeButton").active = false;
 
 	}
 

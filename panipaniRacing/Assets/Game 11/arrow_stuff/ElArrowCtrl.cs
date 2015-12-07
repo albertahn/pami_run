@@ -5,7 +5,7 @@ public class ElArrowCtrl : MonoBehaviour {
 
 	public AudioClip hitSound;
 
-	//public AudioSource audiosource;
+	public AudioSource audiosource;
 
 	public int damage = 20;
 	public float speed = 1000.0f; //7000.0f;
@@ -19,7 +19,7 @@ public class ElArrowCtrl : MonoBehaviour {
 	private float stopTime;
 	private Transform anchor;
 
-
+	public GameObject soundStuff;
 
 
 	// maincommitchange albert test
@@ -34,7 +34,7 @@ public class ElArrowCtrl : MonoBehaviour {
 		rigidbody.AddForce (transform.forward * speed);
 		spherecollider = GetComponent<SphereCollider>();
 		trailrender = GetComponent<TrailRenderer> ();
-
+		//audiosource = GetComponent<AudioSource>();
 
 		//audiosource = GameObject.Find("Camera").GetComponents<AudioSource>();
 
@@ -64,6 +64,8 @@ public class ElArrowCtrl : MonoBehaviour {
 //		Debug.Log("arrow colide");
 
 		//audiosource.PlayOneShot(hitSound, 0.7F);
+
+		GameObject.Find("SoundStuff").GetComponent<SoundFX>().arrowExplode();
 
 		transform.parent = collision.transform;
 
