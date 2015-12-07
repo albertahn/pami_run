@@ -173,7 +173,7 @@ public class Game11_InstantiateLevel : MonoBehaviour
 		Time.timeScale = 0;
 
 		GameObject.Find("Canvas").transform.Find("resumeButton").active = true;
-
+		GameObject.Find("Canvas").transform.Find("PlayButton").active = true;
 	}//set plat
 
 	public void UnPause(){
@@ -181,7 +181,7 @@ public class Game11_InstantiateLevel : MonoBehaviour
 		Time.timeScale = 1;
 
 		GameObject.Find("Canvas").transform.Find("resumeButton").active = false;
-
+		GameObject.Find("Canvas").transform.Find("PlayButton").active = false;
 	}
 
 }

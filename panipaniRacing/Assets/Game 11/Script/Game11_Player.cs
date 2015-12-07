@@ -299,7 +299,7 @@ public class Game11_Player : MonoBehaviour
 		if(dead ==false){
 
 
-			GameObject.Find("Canvas").transform.Find("PlayButton").active = false;
+			//GameObject.Find("Canvas").transform.Find("PlayButton").active = false;
 
 		}
 
@@ -374,6 +374,7 @@ public class Game11_Player : MonoBehaviour
 		{
 			//We cant turn
 			canTurn = false;
+
 		}
 	}
 //gui	
@@ -386,6 +387,7 @@ public class Game11_Player : MonoBehaviour
 		//If we are dead*/
 		if (dead)
 		{
+
 			GameObject.Find("Canvas").transform.Find("PlayButton").active = true;
 
 
@@ -393,6 +395,7 @@ public class Game11_Player : MonoBehaviour
 			int intscore = (int) score;
 
 			if(highestScore < intscore){
+
 				PlayerPrefs.SetInt("highest_score", intscore);
 
 			}
@@ -410,7 +413,7 @@ public class Game11_Player : MonoBehaviour
 	}
 
 	public void PlayAgain(){
-
+		Time.timeScale = 1;
 		Application.LoadLevel("Game 11");
 
 		//
