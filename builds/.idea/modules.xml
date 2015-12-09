@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/builds.iml" filepath="$PROJECT_DIR$/builds.iml" />
+      <module fileurl="file://$PROJECT_DIR$/madHorseRunnerS1/madHorseRunnerS1.iml" filepath="$PROJECT_DIR$/madHorseRunnerS1/madHorseRunnerS1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/unityads/unityads.iml" filepath="$PROJECT_DIR$/unityads/unityads.iml" />
+    </modules>
+  </component>
+</project>

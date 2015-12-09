@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/albertan/Documents/git_hub/madhorsepami_run_12_9/builds/madHorseRunnerS1/libs/unity-classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="5b1e97972c4503e36dc15d60df63e768d3dcdf2a">
+        <dex dex="/Users/albertan/Documents/git_hub/madhorsepami_run_12_9/builds/madHorseRunnerS1/build/intermediates/pre-dexed/release/unity-classes-87a9346441a2dba94fe573dd89033d3ed4d27eb4.jar" />
+    </item>
+
+</items>

@@ -1,0 +1,65 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+From Mad Horse Runner S1:
+* .DS_Store
+From unityads:
+* .DS_Store
+* AndroidManifest.xml
+* build.xml
+* proguard-project.txt
+* res/
+* res/drawable/
+* res/drawable/unityads_background_button_pause.xml
+* res/drawable/unityads_icon_play.xml
+* res/drawable/unityads_icon_speaker_base.xml
+* res/drawable/unityads_icon_speaker_triangle.xml
+* res/drawable/unityads_icon_speaker_waves.xml
+* res/layout/
+* res/layout/unityads_button_audio_toggle.xml
+* res/layout/unityads_button_pause.xml
+* res/layout/unityads_view_video_paused.xml
+* res/layout/unityads_view_video_play.xml
+* res/values/
+* res/values/strings.xml
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+In unityads:
+* libs/unity-ads.jar => unityads/libs/unity-ads.jar
+In Mad Horse Runner S1:
+* AndroidManifest.xml => madHorseRunnerS1/src/main/AndroidManifest.xml
+* assets/ => madHorseRunnerS1/src/main/assets/
+* libs/armeabi-v7a/libmain.so => madHorseRunnerS1/src/main/jniLibs/armeabi-v7a/libmain.so
+* libs/armeabi-v7a/libmono.so => madHorseRunnerS1/src/main/jniLibs/armeabi-v7a/libmono.so
+* libs/armeabi-v7a/libunity.so => madHorseRunnerS1/src/main/jniLibs/armeabi-v7a/libunity.so
+* libs/unity-classes.jar => madHorseRunnerS1/libs/unity-classes.jar
+* libs/x86/libmain.so => madHorseRunnerS1/src/main/jniLibs/x86/libmain.so
+* libs/x86/libmono.so => madHorseRunnerS1/src/main/jniLibs/x86/libmono.so
+* libs/x86/libunity.so => madHorseRunnerS1/src/main/jniLibs/x86/libunity.so
+* res/ => madHorseRunnerS1/src/main/res/
+* src/ => madHorseRunnerS1/src/main/java/
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)
